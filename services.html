@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — MainCrafts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="home.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></span>
+        Main<span>Crafts</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="dropdown">
+            <a href="services.html" class="nav-link active dropdown-toggle">
+              Services <i class="fa-solid fa-chevron-down fa-xs"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#uiux"><i class="fa-solid fa-palette"></i> UI/UX Design</a></li>
+              <li><a href="#webdev"><i class="fa-solid fa-code"></i> Web Development</a></li>
+              <li><a href="#growth"><i class="fa-solid fa-chart-line"></i> Growth Strategy</a></li>
+              <li><a href="#cloud"><i class="fa-solid fa-cloud"></i> Cloud Hosting</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-nav">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container page-hero-inner">
+      <div class="page-hero-breadcrumb">
+        <a href="home.html">Home</a>
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+        <span>Services</span>
+      </div>
+      <h1 class="page-hero-title">What we <span class="highlight">craft for you</span></h1>
+      <p class="page-hero-sub">
+        From pixels to pipelines — we handle every layer of your product so you can focus on what matters most: building something people love.
+      </p>
+      <div class="hero-actions" style="justify-content:center;margin-top:36px;">
+        <a href="contact.html" class="btn btn-primary">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#services-overview" class="btn btn-ghost"><i class="fa-solid fa-chevron-down"></i> Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES OVERVIEW TABS ========== -->
+  <section class="services-overview" id="services-overview">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-layer-group"></i> Our Expertise</div>
+      <h2 class="section-title">Four pillars of <span>exceptional work</span></h2>
+      <p class="section-sub">Every service is crafted end-to-end by specialists who live and breathe their domain.</p>
+
+      <!-- Tab Nav -->
+      <div class="svc-tabs" role="tablist">
+        <button class="svc-tab active" data-tab="uiux" role="tab" aria-selected="true">
+          <i class="fa-solid fa-palette"></i> UI/UX Design
+        </button>
+        <button class="svc-tab" data-tab="webdev" role="tab">
+          <i class="fa-solid fa-code"></i> Web Development
+        </button>
+        <button class="svc-tab" data-tab="growth" role="tab">
+          <i class="fa-solid fa-chart-line"></i> Growth Strategy
+        </button>
+        <button class="svc-tab" data-tab="cloud" role="tab">
+          <i class="fa-solid fa-cloud"></i> Cloud Hosting
+        </button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="svc-panels">
+
+        <!-- UI/UX -->
+        <div class="svc-panel active" id="tab-uiux" role="tabpanel">
+          <div class="svc-panel-grid">
+            <div class="svc-panel-content">
+              <div class="svc-panel-badge icon-violet">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3>UI / UX Design</h3>
+              <p>We design interfaces that don't just look great — they convert, retain, and delight. Every pixel is intentional, every interaction thoughtfully crafted for the real human behind the screen.</p>
+              <ul class="svc-feature-list">
+                <li><i class="fa-solid fa-check"></i> User Research &amp; Journey Mapping</li>
+                <li><i class="fa-solid fa-check"></i> Wireframes &amp; Interactive Prototypes</li>
+                <li><i class="fa-solid fa-check"></i> Design Systems &amp; Component Libraries</li>
+                <li><i class="fa-solid fa-check"></i> Usability Testing &amp; Iteration</li>
+                <li><i class="fa-solid fa-check"></i> Mobile-First Responsive Design</li>
+                <li><i class="fa-solid fa-check"></i> Brand Identity &amp; Visual Guidelines</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="margin-top:28px;">
+                Request a Design Audit <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="svc-panel-visual">
+              <div class="svc-mockup uiux-mockup">
+                <div class="svc-mock-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span style="font-size:0.72rem;color:var(--text-3);margin-left:10px;font-family:var(--font-display);font-weight:600;">Design Studio</span>
+                </div>
+                <div class="svc-mock-body">
+                  <div class="design-palette">
+                    <div class="color-swatch" style="background:#f5a623;"></div>
+                    <div class="color-swatch" style="background:#ff6b35;"></div>
+                    <div class="color-swatch" style="background:#9b59f5;"></div>
+                    <div class="color-swatch" style="background:#4f8ef7;"></div>
+                    <div class="color-swatch" style="background:#2dd4bf;"></div>
+                  </div>
+                  <div class="design-preview">
+                    <div class="design-card">
+                      <div class="design-card-bar"></div>
+                      <div class="design-card-line" style="width:80%"></div>
+                      <div class="design-card-line" style="width:55%"></div>
+                    </div>
+                    <div class="design-card">
+                      <div class="design-card-img"></div>
+                      <div class="design-card-line" style="width:70%"></div>
+                      <div class="design-card-line" style="width:45%"></div>
+                    </div>
+                  </div>
+                  <div class="design-layers">
+                    <div class="layer-item"><i class="fa-regular fa-square"></i><span>Hero Section</span></div>
+                    <div class="layer-item"><i class="fa-regular fa-square"></i><span>Nav Bar</span></div>
+                    <div class="layer-item active-layer"><i class="fa-solid fa-square-check"></i><span>CTA Button</span></div>
+                    <div class="layer-item"><i class="fa-regular fa-square"></i><span>Footer</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Dev -->
+        <div class="svc-panel" id="tab-webdev" role="tabpanel">
+          <div class="svc-panel-grid">
+            <div class="svc-panel-content">
+              <div class="svc-panel-badge icon-blue">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>We build production-ready web applications using modern stacks — React, Next.js, Node, and beyond. Fast, maintainable, tested, and built to scale from day one.</p>
+              <ul class="svc-feature-list">
+                <li><i class="fa-solid fa-check"></i> React / Next.js / Vue Applications</li>
+                <li><i class="fa-solid fa-check"></i> REST &amp; GraphQL API Development</li>
+                <li><i class="fa-solid fa-check"></i> Performance Optimisation &amp; Core Web Vitals</li>
+                <li><i class="fa-solid fa-check"></i> CI/CD Pipeline Setup</li>
+                <li><i class="fa-solid fa-check"></i> TypeScript &amp; Test-Driven Development</li>
+                <li><i class="fa-solid fa-check"></i> Third-Party Integrations &amp; Webhooks</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="margin-top:28px;">
+                Discuss Your Project <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="svc-panel-visual">
+              <div class="svc-mockup code-mockup">
+                <div class="svc-mock-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span style="font-size:0.72rem;color:var(--text-3);margin-left:10px;font-family:var(--font-display);font-weight:600;">app.tsx</span>
+                </div>
+                <div class="code-body">
+                  <div class="code-line"><span class="c-kw">import</span> <span class="c-var">React</span> <span class="c-kw">from</span> <span class="c-str">'react'</span>;</div>
+                  <div class="code-line"><span class="c-kw">import</span> <span class="c-var">{ useState }</span> <span class="c-kw">from</span> <span class="c-str">'react'</span>;</div>
+                  <div class="code-line">&nbsp;</div>
+                  <div class="code-line"><span class="c-kw">const</span> <span class="c-fn">App</span> <span class="c-sym">=</span> <span class="c-sym">()</span> <span class="c-sym">=&gt;</span> <span class="c-sym">{</span></div>
+                  <div class="code-line">&nbsp;&nbsp;<span class="c-kw">const</span> <span class="c-sym">[</span><span class="c-var">count</span><span class="c-sym">,</span> <span class="c-var">setCount</span><span class="c-sym">]</span> <span class="c-sym">=</span></div>
+                  <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-fn">useState</span><span class="c-sym">(</span><span class="c-num">0</span><span class="c-sym">);</span></div>
+                  <div class="code-line">&nbsp;</div>
+                  <div class="code-line">&nbsp;&nbsp;<span class="c-kw">return</span> <span class="c-sym">(</span></div>
+                  <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tag">&lt;main</span> <span class="c-attr">className</span><span class="c-sym">=</span><span class="c-str">"app"</span><span class="c-tag">&gt;</span></div>
+                  <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tag">&lt;h1&gt;</span><span class="c-str">MainCrafts</span><span class="c-tag">&lt;/h1&gt;</span></div>
+                  <div class="code-line code-cursor">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tag">&lt;p&gt;</span><span class="c-str">Build smarter</span><span class="c-tag">&lt;/p&gt;</span><span class="cursor-blink">|</span></div>
+                  <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-tag">&lt;/main&gt;</span></div>
+                  <div class="code-line">&nbsp;&nbsp;<span class="c-sym">);</span></div>
+                  <div class="code-line"><span class="c-sym">};</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Growth -->
+        <div class="svc-panel" id="tab-growth" role="tabpanel">
+          <div class="svc-panel-grid">
+            <div class="svc-panel-content">
+              <div class="svc-panel-badge icon-teal">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3>Growth Strategy</h3>
+              <p>Data beats guesswork. We dig into your funnel, identify the exact levers to pull, and build a repeatable growth engine that compounds over time.</p>
+              <ul class="svc-feature-list">
+                <li><i class="fa-solid fa-check"></i> Funnel Analysis &amp; Conversion Optimisation</li>
+                <li><i class="fa-solid fa-check"></i> SEO &amp; Content Strategy</li>
+                <li><i class="fa-solid fa-check"></i> Paid Acquisition Playbooks</li>
+                <li><i class="fa-solid fa-check"></i> Retention &amp; Lifecycle Email</li>
+                <li><i class="fa-solid fa-check"></i> A/B Testing &amp; Experimentation</li>
+                <li><i class="fa-solid fa-check"></i> Analytics Setup &amp; Dashboards</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="margin-top:28px;">
+                Get a Growth Audit <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="svc-panel-visual">
+              <div class="svc-mockup growth-mockup">
+                <div class="svc-mock-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span style="font-size:0.72rem;color:var(--text-3);margin-left:10px;font-family:var(--font-display);font-weight:600;">Growth Dashboard</span>
+                </div>
+                <div class="growth-body">
+                  <div class="growth-kpis">
+                    <div class="growth-kpi">
+                      <div class="gkpi-label">MRR</div>
+                      <div class="gkpi-val">$48.2K</div>
+                      <div class="gkpi-change up">▲ 23%</div>
+                    </div>
+                    <div class="growth-kpi">
+                      <div class="gkpi-label">Churn</div>
+                      <div class="gkpi-val">1.2%</div>
+                      <div class="gkpi-change up">▼ 0.4%</div>
+                    </div>
+                    <div class="growth-kpi">
+                      <div class="gkpi-label">CAC</div>
+                      <div class="gkpi-val">$18</div>
+                      <div class="gkpi-change up">▼ 12%</div>
+                    </div>
+                  </div>
+                  <div class="growth-chart-wrap">
+                    <div class="growth-chart-label">Monthly Revenue Growth</div>
+                    <div class="growth-chart">
+                      <div class="g-bar" style="--h:40%"><span>Jan</span></div>
+                      <div class="g-bar" style="--h:55%"><span>Feb</span></div>
+                      <div class="g-bar" style="--h:50%"><span>Mar</span></div>
+                      <div class="g-bar" style="--h:70%"><span>Apr</span></div>
+                      <div class="g-bar" style="--h:65%"><span>May</span></div>
+                      <div class="g-bar" style="--h:88%"><span>Jun</span></div>
+                      <div class="g-bar highlight-bar" style="--h:100%"><span>Jul</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="svc-panel" id="tab-cloud" role="tabpanel">
+          <div class="svc-panel-grid">
+            <div class="svc-panel-content">
+              <div class="svc-panel-badge icon-orange">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <h3>Cloud Hosting</h3>
+              <p>Forget server headaches. We architect, deploy, and monitor your cloud infrastructure — so you get enterprise-grade reliability at startup-friendly costs.</p>
+              <ul class="svc-feature-list">
+                <li><i class="fa-solid fa-check"></i> AWS / GCP / Azure Architecture</li>
+                <li><i class="fa-solid fa-check"></i> Docker &amp; Kubernetes Orchestration</li>
+                <li><i class="fa-solid fa-check"></i> Auto-Scaling &amp; Load Balancing</li>
+                <li><i class="fa-solid fa-check"></i> Zero-Downtime Deployments</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 Monitoring &amp; Alerting</li>
+                <li><i class="fa-solid fa-check"></i> Daily Backups &amp; Disaster Recovery</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="margin-top:28px;">
+                Talk to a Cloud Expert <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="svc-panel-visual">
+              <div class="svc-mockup cloud-mockup">
+                <div class="svc-mock-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span style="font-size:0.72rem;color:var(--text-3);margin-left:10px;font-family:var(--font-display);font-weight:600;">Infrastructure Map</span>
+                </div>
+                <div class="cloud-body">
+                  <div class="infra-grid">
+                    <div class="infra-node node-cdn"><i class="fa-solid fa-globe"></i><span>CDN</span></div>
+                    <div class="infra-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="infra-node node-lb"><i class="fa-solid fa-scale-balanced"></i><span>Load Balancer</span></div>
+                    <div class="infra-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="infra-node node-app"><i class="fa-brands fa-docker"></i><span>App Cluster</span></div>
+                  </div>
+                  <div class="infra-row2">
+                    <div class="infra-node node-db"><i class="fa-solid fa-database"></i><span>Database</span></div>
+                    <div class="infra-node node-cache"><i class="fa-solid fa-bolt"></i><span>Redis Cache</span></div>
+                    <div class="infra-node node-storage"><i class="fa-solid fa-hard-drive"></i><span>Object Store</span></div>
+                  </div>
+                  <div class="infra-status">
+                    <div class="infra-status-dot"></div>
+                    <span>All systems operational · 99.98% uptime this month</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /svc-panels -->
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-arrows-spin"></i> How It Works</div>
+      <h2 class="section-title">From brief to <span>live in 4 steps</span></h2>
+      <p class="section-sub">A transparent, collaborative process that keeps you in control at every stage.</p>
+
+      <div class="process-steps">
+        <div class="process-step feature-card" data-delay="0">
+          <div class="process-num">01</div>
+          <div class="feat-icon-wrap icon-blue"><i class="fa-solid fa-comments"></i></div>
+          <h3>Discovery Call</h3>
+          <p>We start with a 30-minute call to understand your goals, constraints, timeline, and what success looks like for you.</p>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="process-step feature-card" data-delay="1">
+          <div class="process-num">02</div>
+          <div class="feat-icon-wrap icon-violet"><i class="fa-solid fa-pencil-ruler"></i></div>
+          <h3>Proposal &amp; Scope</h3>
+          <p>We send a detailed proposal with timeline, deliverables, and fixed pricing. No surprises, no scope creep.</p>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="process-step feature-card" data-delay="2">
+          <div class="process-num">03</div>
+          <div class="feat-icon-wrap icon-teal"><i class="fa-solid fa-hammer"></i></div>
+          <h3>Build &amp; Iterate</h3>
+          <p>Weekly check-ins, a shared Notion workspace, and async updates keep you fully in the loop throughout.</p>
+        </div>
+        <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="process-step feature-card" data-delay="3">
+          <div class="process-num">04</div>
+          <div class="feat-icon-wrap icon-orange"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Launch &amp; Support</h3>
+          <p>We handle deployment, do a final QA pass, and provide 30 days of post-launch support at no extra cost.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-tags"></i> Transparent Pricing</div>
+      <h2 class="section-title">Simple plans, <span>no surprises</span></h2>
+      <p class="section-sub">Pick the plan that fits your stage. Upgrade or cancel anytime.</p>
+
+      <div class="pricing-toggle">
+        <span class="toggle-label active" id="toggle-monthly">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billing-toggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="toggle-label" id="toggle-annual">Annual <span class="save-badge">Save 20%</span></span>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card feature-card" data-delay="0">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" data-monthly="49" data-annual="39">49</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <div class="plan-desc">Perfect for solo founders and small projects getting off the ground.</div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> 1 Active Project</li>
+            <li><i class="fa-solid fa-check"></i> Up to 5 Team Members</li>
+            <li><i class="fa-solid fa-check"></i> 10 GB Storage</li>
+            <li><i class="fa-solid fa-check"></i> Community Support</li>
+            <li><i class="fa-solid fa-check"></i> Basic Analytics</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Custom Domain</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Priority Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:28px;">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card-featured feature-card" data-delay="1">
+          <div class="plan-popular">Most Popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" data-monthly="99" data-annual="79">99</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <div class="plan-desc">For growing teams that need power, flexibility, and speed.</div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> 10 Active Projects</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited Team Members</li>
+            <li><i class="fa-solid fa-check"></i> 100 GB Storage</li>
+            <li><i class="fa-solid fa-check"></i> Priority Email Support</li>
+            <li><i class="fa-solid fa-check"></i> Advanced Analytics</li>
+            <li><i class="fa-solid fa-check"></i> Custom Domain</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Dedicated Account Manager</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;">Start Free Trial</a>
+        </div>
+
+        <div class="pricing-card feature-card" data-delay="2">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price">
+            <span class="price-currency"></span>
+            <span class="price-amount enterprise-price">Custom</span>
+          </div>
+          <div class="plan-desc">Bespoke solutions for large organisations with unique requirements.</div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Unlimited Projects</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited Team Members</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited Storage</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 Dedicated Support</li>
+            <li><i class="fa-solid fa-check"></i> Custom Analytics &amp; Reports</li>
+            <li><i class="fa-solid fa-check"></i> Custom Domain &amp; SSO</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Account Manager</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:28px;">Contact Sales</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-star"></i> What Clients Say</div>
+      <h2 class="section-title">Loved by <span>builders worldwide</span></h2>
+
+      <div class="testimonials-grid">
+        <div class="testi-card feature-card" data-delay="0">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote">"MainCrafts took our messy Figma files and turned them into a production app in under 3 weeks. The quality was exceptional — better than what we'd get from a 5-person in-house team."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#f5a623,#ff6b35);">S</div>
+            <div>
+              <div class="testi-name">Sarah K.</div>
+              <div class="testi-role">Founder, Loopify</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card feature-card" data-delay="1">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote">"Their growth team helped us cut CAC by 40% in two months. They don't just give you a strategy doc — they get in the trenches and execute alongside you."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#9b59f5,#4f8ef7);">M</div>
+            <div>
+              <div class="testi-name">Marcus T.</div>
+              <div class="testi-role">CPO, Vantage Labs</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card feature-card" data-delay="2">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote">"We migrated our entire infrastructure to AWS with MainCrafts. Zero downtime, 60% cost reduction, and we sleep better at night knowing everything is monitored 24/7."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#2dd4bf,#4f8ef7);">R</div>
+            <div>
+              <div class="testi-name">Riya P.</div>
+              <div class="testi-role">CTO, Stackr Inc.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-banner">
+    <div class="cta-bg"><div class="orb orb-cta-1"></div><div class="orb orb-cta-2"></div></div>
+    <div class="container cta-inner">
+      <h2>Ready to get started?<br /><span>Let's build together.</span></h2>
+      <p>Tell us about your project and we'll send a custom proposal within 48 hours.</p>
+      <div class="hero-actions" style="justify-content:center;margin-top:32px;">
+        <a href="contact.html" class="btn btn-primary">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="about.html" class="btn btn-ghost">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="home.html" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></span>Main<span>Crafts</span>
+        </a>
+        <p>Crafting smarter products for the next generation of builders.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html#uiux">UI/UX Design</a>
+          <a href="services.html#webdev">Web Development</a>
+          <a href="services.html#growth">Growth Strategy</a>
+          <a href="services.html#cloud">Cloud Hosting</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Status</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 MainCrafts, Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i> Done!</div>
+  <script src="script.js"></script>
+</body>
+</html>

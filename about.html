@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — MainCrafts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="home.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></span>
+        Main<span>Crafts</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li class="dropdown">
+            <a href="services.html" class="nav-link dropdown-toggle">
+              Services <i class="fa-solid fa-chevron-down fa-xs"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#uiux"><i class="fa-solid fa-palette"></i> UI/UX Design</a></li>
+              <li><a href="services.html#webdev"><i class="fa-solid fa-code"></i> Web Development</a></li>
+              <li><a href="services.html#growth"><i class="fa-solid fa-chart-line"></i> Growth Strategy</a></li>
+              <li><a href="services.html#cloud"><i class="fa-solid fa-cloud"></i> Cloud Hosting</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-nav">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container page-hero-inner">
+      <div class="page-hero-breadcrumb">
+        <a href="home.html">Home</a>
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+        <span>About</span>
+      </div>
+      <h1 class="page-hero-title">We build for <span class="highlight">bold ideas</span></h1>
+      <p class="page-hero-sub">MainCrafts was born from a simple belief — great products shouldn't require a 200-person team or a $10M budget. We exist to level the playing field.</p>
+    </div>
+  </section>
+
+  <!-- ========== STORY ========== -->
+  <section class="about-story">
+    <div class="container about-story-grid">
+      <div class="about-story-text">
+        <div class="section-label"><i class="fa-solid fa-book-open"></i> Our Story</div>
+        <h2 class="section-title">Started in a garage.<br /><span>Now powering thousands.</span></h2>
+        <p>In 2021, our founders were frustrated. They kept seeing brilliant startup ideas die not from lack of vision — but from lack of execution speed. Talented teams wasted months on infrastructure, design systems, and tooling before writing a single line of product code.</p>
+        <p style="margin-top:16px;">So they built MainCrafts — a platform that strips away the overhead and hands builders a rocket ship on day one. Today, over 10,000 teams across 60+ countries use MainCrafts to go from idea to live product in days, not months.</p>
+        <div class="about-milestones">
+          <div class="milestone"><span class="milestone-year">2021</span><span class="milestone-desc">Founded in Chennai, India</span></div>
+          <div class="milestone"><span class="milestone-year">2022</span><span class="milestone-desc">First 1,000 customers</span></div>
+          <div class="milestone"><span class="milestone-year">2023</span><span class="milestone-desc">Series A — $12M raised</span></div>
+          <div class="milestone"><span class="milestone-year">2025</span><span class="milestone-desc">10,000+ teams worldwide</span></div>
+        </div>
+      </div>
+      <div class="about-story-visual">
+        <div class="about-card-stack">
+          <div class="about-img-card card-back"></div>
+          <div class="about-img-card card-front">
+            <div class="about-img-inner">
+              <i class="fa-solid fa-bolt-lightning about-big-icon"></i>
+              <div class="about-img-label">MainCrafts HQ</div>
+              <div class="about-img-sub">Chennai · London · New York</div>
+            </div>
+          </div>
+          <div class="about-badge-float">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <div class="badge-title">Best DevTool 2024</div>
+              <div class="badge-sub">Product Hunt</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VALUES ========== -->
+  <section class="about-values">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-heart"></i> What We Stand For</div>
+      <h2 class="section-title">Our <span>core values</span></h2>
+      <div class="values-grid">
+        <div class="value-card feature-card" data-delay="0">
+          <div class="feat-icon-wrap icon-blue"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Builder-First</h3>
+          <p>Every decision we make starts with one question: does this make builders' lives easier? If not, we don't ship it.</p>
+        </div>
+        <div class="value-card feature-card" data-delay="1">
+          <div class="feat-icon-wrap icon-violet"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Radical Transparency</h3>
+          <p>No dark patterns. No hidden fees. We share our roadmap publicly, our mistakes openly, and our wins loudly.</p>
+        </div>
+        <div class="value-card feature-card" data-delay="2">
+          <div class="feat-icon-wrap icon-teal"><i class="fa-solid fa-infinity"></i></div>
+          <h3>Relentless Craft</h3>
+          <p>Details matter. We obsess over milliseconds, pixel spacing, and API ergonomics because your users deserve the best.</p>
+        </div>
+        <div class="value-card feature-card" data-delay="3">
+          <div class="feat-icon-wrap icon-orange"><i class="fa-solid fa-earth-asia"></i></div>
+          <h3>Global Mindset</h3>
+          <p>Great ideas come from everywhere. Our team spans 12 countries and our platform supports every timezone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEAM ========== -->
+  <section class="about-team">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-users"></i> The People</div>
+      <h2 class="section-title">Meet the <span>team</span></h2>
+      <p class="section-sub">Small team. Huge ambitions. We hire for curiosity, not credentials.</p>
+      <div class="team-grid">
+        <div class="team-card feature-card" data-delay="0">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#f5a623,#ff6b35);">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Arjun Ravi</h3>
+          <div class="team-role">Co-Founder & CEO</div>
+          <p>Ex-Google SWE. Obsessed with developer experience and product velocity.</p>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="team-card feature-card" data-delay="1">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#9b59f5,#4f8ef7);">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Priya Sharma</h3>
+          <div class="team-role">Co-Founder & CTO</div>
+          <p>Systems engineer. Built infrastructure that handles 100M+ daily events.</p>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="team-card feature-card" data-delay="2">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#2dd4bf,#4f8ef7);">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h3>Karan Mehta</h3>
+          <div class="team-role">Head of Design</div>
+          <p>Design lead behind products loved by millions. Former Figma community champion.</p>
+          <div class="team-social">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS STRIP ========== -->
+  <section class="about-stats-strip">
+    <div class="container about-stats-grid">
+      <div class="about-stat">
+        <span class="stat-num">10K+</span>
+        <span class="stat-label">Teams Building</span>
+      </div>
+      <div class="about-stat">
+        <span class="stat-num">60+</span>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="about-stat">
+        <span class="stat-num">99.9%</span>
+        <span class="stat-label">Uptime</span>
+      </div>
+      <div class="about-stat">
+        <span class="stat-num">4.9★</span>
+        <span class="stat-label">Average Rating</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-banner">
+    <div class="cta-bg"><div class="orb orb-cta-1"></div><div class="orb orb-cta-2"></div></div>
+    <div class="container cta-inner">
+      <h2>Want to work with us?<br /><span>Let's talk.</span></h2>
+      <p>We're always looking for talented people and ambitious partners.</p>
+      <div class="hero-actions" style="justify-content:center;margin-top:32px;">
+        <a href="contact.html" class="btn btn-primary">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="home.html" class="btn btn-ghost">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="home.html" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></span>Main<span>Crafts</span>
+        </a>
+        <p>Crafting smarter products for the next generation of builders.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html#uiux">UI/UX Design</a>
+          <a href="services.html#webdev">Web Development</a>
+          <a href="services.html#growth">Growth Strategy</a>
+          <a href="services.html#cloud">Cloud Hosting</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Status</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 MainCrafts, Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i> Message sent!</div>
+  <script src="script.js"></script>
+</body>
+</html>

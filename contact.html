@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — MainCrafts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="home.html" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></span>
+        Main<span>Crafts</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="dropdown">
+            <a href="services.html" class="nav-link dropdown-toggle">
+              Services <i class="fa-solid fa-chevron-down fa-xs"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="services.html#uiux"><i class="fa-solid fa-palette"></i> UI/UX Design</a></li>
+              <li><a href="services.html#webdev"><i class="fa-solid fa-code"></i> Web Development</a></li>
+              <li><a href="services.html#growth"><i class="fa-solid fa-chart-line"></i> Growth Strategy</a></li>
+              <li><a href="services.html#cloud"><i class="fa-solid fa-cloud"></i> Cloud Hosting</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-nav">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container page-hero-inner">
+      <div class="page-hero-breadcrumb">
+        <a href="home.html">Home</a>
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+        <span>Contact</span>
+      </div>
+      <h1 class="page-hero-title">Let's <span class="highlight">start a conversation</span></h1>
+      <p class="page-hero-sub">Have a project in mind? A question about our platform? Or just want to say hi? We'd love to hear from you. We reply within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Info panel -->
+      <div class="contact-info">
+        <h2 class="section-title" style="font-size:1.8rem;">Get in <span>touch</span></h2>
+        <p style="color:var(--text-2);margin-bottom:36px;font-size:0.95rem;">Fill out the form and our team will reach out within one business day.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-val">hello@maincrafts.io</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-val">+91 98765 43210</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-detail-label">Office</div>
+              <div class="contact-detail-val">Ambattur Industrial Estate,<br/>Chennai, Tamil Nadu 600058</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="contact-detail-label">Hours</div>
+              <div class="contact-detail-val">Mon–Fri, 9 AM – 6 PM IST</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <p style="font-size:0.82rem;color:var(--text-3);text-transform:uppercase;letter-spacing:0.08em;font-weight:700;margin-bottom:14px;">Follow us</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form panel -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contact-form" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full Name <span class="required">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="cf-name" name="name" placeholder="John Doe" autocomplete="name" />
+              </div>
+              <div class="field-error" id="err-name"></div>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address <span class="required">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="email" id="cf-email" name="email" placeholder="john@company.com" autocomplete="email" />
+              </div>
+              <div class="field-error" id="err-email"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-tag input-icon"></i>
+              <select id="cf-subject" name="subject">
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="general">General Enquiry</option>
+                <option value="sales">Sales &amp; Pricing</option>
+                <option value="support">Technical Support</option>
+                <option value="partnership">Partnership</option>
+                <option value="careers">Careers</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-message">Message <span class="required">*</span></label>
+            <div class="input-wrap textarea-wrap">
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your project, question, or idea…"></textarea>
+            </div>
+            <div class="field-error" id="err-message"></div>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="cf-consent" name="consent" />
+            <label for="cf-consent">I agree to the <a href="#">Privacy Policy</a> and consent to being contacted by MainCrafts.</label>
+          </div>
+          <div class="field-error" id="err-consent"></div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <div class="form-success" id="form-success">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>Message sent successfully!</strong>
+              <p>We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-circle-question"></i> Common Questions</div>
+      <h2 class="section-title">Frequently <span>asked</span></h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            How quickly will I get a response?
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We reply to all enquiries within one business day. For urgent matters, email us directly at hello@maincrafts.io and mark the subject "Urgent".</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you offer a free trial?
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Every new account gets a 14-day free trial with full access to all features. No credit card required to start.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I book a live demo?
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Select "Sales & Pricing" in the contact form above and we'll reach out to schedule a personalised walkthrough.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you work with agencies and resellers?
+            <i class="fa-solid fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we have a Partner Programme for agencies and freelancers. Choose "Partnership" in the form and our partnerships team will connect with you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="home.html" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></span>Main<span>Crafts</span>
+        </a>
+        <p>Crafting smarter products for the next generation of builders.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html#uiux">UI/UX Design</a>
+          <a href="services.html#webdev">Web Development</a>
+          <a href="services.html#growth">Growth Strategy</a>
+          <a href="services.html#cloud">Cloud Hosting</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Status</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 MainCrafts, Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i> Message sent successfully!</div>
+  <script src="script.js"></script>
+</body>
+</html>
